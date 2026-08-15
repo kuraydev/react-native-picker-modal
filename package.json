@@ -1,9 +1,9 @@
 {
-  "name": "@freakycoder/react-native-picker-modal",
-  "version": "0.1.2",
+  "name": "@kuraydev/react-native-picker-modal",
+  "version": "1.0.0",
   "description": "Easy and fully customizable picker modal for React Native.",
   "main": "./build/dist/PickerModal.js",
-  "repository": "git@github.com:WrathChaos/react-native-picker-modal.git",
+  "repository": "git@github.com:kuraydev/react-native-picker-modal.git",
   "author": "FreakyCoder <kurayogun@gmail.com>",
   "license": "MIT",
   "homepage": "https://www.freakycoder.com",
@@ -48,5 +48,23 @@
     "semantic-release": "semantic-release",
     "copy:assets": "cpx 'lib/local-assets/**' './build/dist/local-assets'",
     "copy:package": "cpx '../package.json' '../build/dist/'"
-  }
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.64.0"
+  },
+  "types": "./build/dist/PickerModal.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/dist/PickerModal.d.ts",
+      "default": "./build/dist/PickerModal.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "build",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ]
 }
